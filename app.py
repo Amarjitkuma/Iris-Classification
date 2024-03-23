@@ -23,17 +23,17 @@ features = pd.DataFrame([sepal_length, sepal_width, petal_length, petal_width]).
 
 # Scale the features
 features = scaler.transform(features)
-
+if st.button("Predict"):
 # Make the prediction
-prediction = model.predict(features)
+    prediction = model.predict(features)
 
-# Display the prediction
-st.write(f'Prediction: {prediction[0]}')
+    # Display the prediction
+    st.write(f'Prediction: {prediction[0]}')
 
-# Display the image of the predicted species
-if prediction[0] == 'Iris-setosa':
-    st.image('iris-setosa.jpg', use_column_width=True)
-elif prediction[0] == 'Iris-versicolor':
-    st.image('Iris_versicolor.jpg', use_column_width=True)
-elif prediction[0] == 'Iris-virginica':
-    st.image('Iris-virginica.jpg', use_column_width=True)
+    # Display the image of the predicted species
+    if prediction[0] == 'Iris-setosa':
+        st.image('iris-setosa.jpg', use_column_width=True)
+    elif prediction[0] == 'Iris-versicolor':
+        st.image('Iris_versicolor.jpg', use_column_width=True)
+    elif prediction[0] == 'Iris-virginica':
+        st.image('Iris-virginica.jpg', use_column_width=True)
