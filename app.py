@@ -14,7 +14,7 @@ def main():
     <h2 style="color:white;text-align:center;">Iris Classification DL App </h2>
     </div>
     """
-
+    st.markdown(html_temp,unsafe_allow_html=True)
     # Define the feature input
     st.write('Please enter the following parameters:')
     sepal_length = st.number_input('Sepal Length',  value=0.0, step=1.0)
