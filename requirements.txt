@@ -1,7 +1,7 @@
-Pillow==8.4.0
+Pillow
 numpy
 pandas
 scikit-learn
-keras==2.6.0
-tensorflow==2.6.0
+keras
+tensorflow
 
