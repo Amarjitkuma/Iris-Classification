@@ -3,5 +3,5 @@ numpy
 pandas
 scikit-learn
 keras
-tensorflow==2.9
+tensorflow
 
