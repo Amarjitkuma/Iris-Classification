@@ -16,10 +16,10 @@ def main():
     """
     st.markdown(html_temp,unsafe_allow_html=True)
     # Define the feature input
-    sepal_length = st.text_input("Sepal Length", value="Type Here")
-    sepal_width = st.text_input("Sepal Width", value="Type Here")
-    petal_length = st.text_input("Petal Length", value="Type Here")
-    petal_width = st.text_input("Petal Width", value="Type Here")
+    sepal_length = st.text_input("Sepal Length")
+    sepal_width = st.text_input("Sepal Width")
+    petal_length = st.text_input("Petal Length")
+    petal_width = st.text_input("Petal Width")
 
     if sepal_length != 'Type Here':
       sepal_length = float(sepal_length)
