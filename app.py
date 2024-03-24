@@ -22,7 +22,7 @@ def main():
     petal_width = st.number_input('Petal Width',  value=0.0)
     
     # Create a dataframe from the inputs
-    features = pd.DataFrame([sepal_length, sepal_width, petal_length, petal_width]).T
+    features = pd.DataFrame([sepal_length, sepal_width, petal_length, petal_width])
     
     # Scale the features
     features = scaler.transform(features)
