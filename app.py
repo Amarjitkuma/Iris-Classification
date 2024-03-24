@@ -30,13 +30,13 @@ def main():
         petal_width = float(petal_width)
     
     # Create a dataframe from the inputs
-    #features = pd.DataFrame([sepal_length, sepal_width, petal_length, petal_width]).T
+    features = pd.DataFrame([sepal_length, sepal_width, petal_length, petal_width]).T
     
     # Scale the features
-    #features = scaler.transform(features)
+    features = scaler.transform(features)
     if st.button("Predict"):
     # Make the prediction
-        prediction = model.predict(sepal_length, sepal_width, petal_length, petal_width)
+        prediction = model.predict(features)
     
         # Display the prediction
         st.write(f'Prediction: {prediction[0]}')
