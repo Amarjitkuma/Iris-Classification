@@ -31,7 +31,8 @@ def main():
         prediction = model.predict(features)
     
         # Display the prediction
-        st.write(f'Prediction: {prediction[0]}')
+        st.success('The output is {}'.format(prediction[0]))
+        #st.write(f'Prediction: {prediction[0]}')
     
         # Display the image of the predicted species
         if prediction[0] == 'Iris-setosa':
