@@ -16,20 +16,10 @@ def main():
     """
     st.markdown(html_temp,unsafe_allow_html=True)
     # Define the feature input
-    sepal_length = st.number_input("Sepal Length", value="Type Here")
-    sepal_width = st.number_input("Sepal Width", value="Type Here")
-    petal_length = st.number_input("Petal Length", value="Type Here")
-    petal_width = st.number_input("Petal Width", value="Type Here")
-
-
-    if sepal_length != 'Type Here':
-      sepal_length = float(sepal_length)
-    if sepal_width != 'Type Here':
-        sepal_width = float(sepal_width)
-    if petal_length != 'Type Here':
-        petal_length = float(petal_length)
-    if petal_width != 'Type Here':
-        petal_width = float(petal_width)
+    sepal_length = st.number_input('Sepal Length',  value=0.0)
+    sepal_width = st.number_input('Sepal Width',  value=0.0)
+    petal_length = st.number_input('Petal Length',  value=0.0)
+    petal_width = st.number_input('Petal Width',  value=0.0)
     
     # Create a dataframe from the inputs
     features = pd.DataFrame([sepal_length, sepal_width, petal_length, petal_width]).T
